@@ -1,8 +1,11 @@
 Title: Contact
 Template: contact
 
-My Contact page!
+[Send us an email](mailto:contact@peroshi.com?Subject=Hello!).
 
-Foo!
+### Registered address<br>
+Fake Street<br>
+Oxford<br>
+OX1 0L0<br>
 
-And bar?
+Company Registration No. 13377331
