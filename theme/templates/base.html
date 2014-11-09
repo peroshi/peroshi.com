@@ -35,7 +35,10 @@
         </section>
 
         <footer>
-            <p>&copy; {{ now }} Peroshi Ltd.</p>
+            <!-- Ugh, this feels slightly wrong. But we're in a static HTML file. What do you want
+                 me to do? Recompile the website on January 1st? No thanks. -->
+            <p>&copy; <span id="copyright-date"></span> Peroshi Ltd.</p>
+            <script>document.getElementById('copyright-date').innerHTML = new Date().getFullYear();</script>
         </footer>
 
         {% if GOOGLE_ANALYTICS %}
