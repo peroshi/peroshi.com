@@ -1,5 +1,15 @@
 CURRENT_BRANCH = $(shell git rev-parse --abbrev-ref HEAD)
 
+help:
+	@echo "Usage"
+	@echo "  make requirements - installs the python requirements"
+	@echo "  make npm          - installs the npm requirements"
+	@echo "  make bower        - installs the bower requirements"
+	@echo "  make install      - installs all requirements"
+	@echo "  make s3cmd        - syncs the built site directory with s3"
+	@echo "  make build        - builds the pelican site"
+	@echo "  make deploy       - builds the pelican site and syncs it to s3"
+
 requirements:
 	pip install -r requirements.txt
 
