@@ -9,8 +9,6 @@ PATH = 'content'
 
 TIMEZONE = 'Europe/London'
 
-DEFAULT_LANG = 'en'
-
 # We don't need feeds generated.
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
