@@ -1,0 +1,16 @@
+{
+  "name": "peroshi.com",
+  "version": "0.0.0",
+  "homepage": "https://github.com/peroshi/peroshi.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "3.0.2"
+  }
+}

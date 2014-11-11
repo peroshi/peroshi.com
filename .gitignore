@@ -1,0 +1,6 @@
+output/
+cache/
+node_modules/
+dist/
+.tmp/
+theme/static/lib/
