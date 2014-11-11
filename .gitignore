@@ -1,6 +1,7 @@
-output/
-cache/
-node_modules/
-dist/
+.sass-cache/
 .tmp/
+cache/
+dist/
+node_modules/
+output/
 theme/static/lib/
