@@ -3,6 +3,7 @@ CURRENT_BRANCH = $(shell git rev-parse --abbrev-ref HEAD)
 help:
 	@echo "Usage"
 	@echo "  make requirements - installs the python requirements"
+	@echo "  make ruby         - installs the ruby requirements"
 	@echo "  make npm          - installs the npm requirements"
 	@echo "  make bower        - installs the bower requirements"
 	@echo "  make install      - installs all requirements"
@@ -13,13 +14,18 @@ help:
 requirements:
 	pip install -r requirements.txt
 
+ruby:
+	rbenv install --skip-existing
+	gem install bundler
+	bundle install
+
 npm:
 	npm install
 
 bower:
 	bower install
 
-install: requirements npm bower
+install: requirements ruby npm bower
 
 s3cmd:
 	s3cmd --config=s3cfg sync --delete-removed --acl-public dist/ s3://peroshi.com/
