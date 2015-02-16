@@ -1,0 +1,34 @@
+#site-header
+    .structure
+        @media ({$break-phone})
+            flexbox()
+
+#site-logo
+    margin: 20px auto
+    display: block
+    width: 61%
+    @media ({$break-phone})
+        flex(1, 1, 49%)
+        margin: 40px 0
+
+    svg
+        display: block
+        fill: #545454
+        @media ({$break-phone})
+            height: 30px
+
+#site-nav
+    @extend $font-karla
+    @media ({$break-phone})
+        flex(1, 1, 49%)
+        flexbox()
+        align-items(center)
+
+    a
+        @extend $link-sub
+        color: $main-grey
+        display: block
+        text-align: center
+        @media ({$break-phone})
+            &:not(:first-child)
+                margin-left: 40px

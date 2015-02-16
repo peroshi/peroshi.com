@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title><% if (typeof title !== 'undefined') { %><%= title %> - <% } %><%= siteTitle %></title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+
+    <body class="<% current.path.forEach(function (className) { %>page-<%= className %> <% }) %>">
+
+        <header id="site-header" role="banner">
+            <div class="structure">
+                <a href="/" id="site-logo"><%- partial("_svg/wordmark") %></a>
+                <nav id="site-nav" role="navigation">
+                    <a href="/work">Work</a>
+                    <a href="/contact">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <main id="site-content">
+            <% if(current.path[0] === "work" && current.source !== 'index') { %>
+                <%- partial(current.path[0] + "/_nest") %>
+            <% } else { %>
+                <%- yield %>
+            <% } %>
+        </main>
+
+        <footer id="site-footer" role="contentinfo">
+            <div class="structure">
+                <div class="logo"><%- partial("_svg/logo") %></div>
+                <div class="text">
+                    <a href="mailto:hello@peroshi.com">hello@peroshi.com</a>
+                    <span>&copy; 2015 Peroshi</span>
+                    <span>All rights reserved</span>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+</html>

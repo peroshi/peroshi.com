@@ -1,0 +1,21 @@
+{
+  "name": "harp",
+  "version": "0.0.0",
+  "authors": [
+    "Roger Hutchings <roger@hutchin.gs>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.styl": "~3.0.2",
+    "stylus-flex-mixin": "git@github.com:differui/stylus-flex-mixin.git",
+    "nib": "git@github.com:tj/nib.git#~1.1.0"
+  }
+}

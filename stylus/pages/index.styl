@@ -1,0 +1,38 @@
+.page-index
+
+    .blurb
+        background-color: $off-white
+        padding: 45px 0
+
+        .structure
+            @media ({$break-phone})
+                flexbox()
+
+        .blurb-image
+            display: none
+            @media ({$break-phone})
+                display: block
+                flex(1, 1, 49%)
+
+        .blurb-text
+            @media ({$break-phone})
+                flex(1, 1, 49%)
+
+            p
+                font-size: 30px
+                margin: 0 0 45px 0
+                &:last-of-type
+                    margin: 0
+
+    .projects-link
+        @extend $font-montserrat
+        color: #878787
+        display: block
+        font-weight: bold
+        padding: 2em 0
+        text-align: center
+        text-decoration: none
+        &:hover
+            background: $light-grey
+            color: white
+

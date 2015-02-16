@@ -1,0 +1,34 @@
+.page-work #site-content
+
+    .text
+        background: $off-white
+
+    .structure
+        @media ({$break-phone})
+            flexbox()
+            flex-wrap(wrap)
+
+    h1
+        @media ({$break-phone})
+            flex(0, 0, 100%)
+
+    dt
+        @extend $font-montserrat
+        font-weight: bold
+
+    dd
+        margin: 0 0 1em 0
+
+    .info
+        @media ({$break-mid})
+            flex(1, 1, 32%)
+            padding-right: 20px
+            box-sizing: border-box
+        @media ({$break-wide})
+            flex(0, 0, 25%)
+
+    .description
+        @media ({$break-mid})
+            flex(1, 1, 68%)
+        @media ({$break-wide})
+            flex(0, 0, 50%)

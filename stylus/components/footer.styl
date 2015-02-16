@@ -1,0 +1,33 @@
+#site-footer
+    @extend $font-karla
+    background: $main-grey
+    color: #ccc
+    padding: 60px 0
+
+    .logo
+        display: block
+        width: 40px
+        margin: 0 auto
+        svg
+            fill: $light-grey
+
+    .text
+        margin-top: 30px
+        text-align: center
+
+        a,
+        span
+            display: block
+            font-size: 12px
+            @media ({$break-phone})
+                display: inline
+                font-size: 14px
+
+        a
+            @extend $link-sub
+            color: $light-grey
+
+        span
+            @media ({$break-phone})
+                &:before
+                    content: ' - '

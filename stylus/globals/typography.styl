@@ -1,0 +1,34 @@
+$font-garamond
+    font-family: "EB Garamond", serif
+
+$font-karla
+    font-family: "Karla", sans-serif
+
+$font-montserrat
+    font-family: "Montserrat", sans-serif
+
+$link-sub
+    transition color 0.1s linear
+    text-decoration: none
+    &:hover
+        color: $purple
+
+$link-main
+    color: $purple
+    text-decoration: none
+    &:hover
+        text-decoration: underline
+
+body
+    @extend $font-garamond
+    color: $main-grey
+    font:
+        size: 16px
+        weight: normal
+    line-height: 1.4
+
+a
+    @extend $link-main
+
+h1
+    @extend $font-montserrat
