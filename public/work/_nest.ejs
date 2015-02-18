@@ -1,24 +1,20 @@
 <div class="text">
 
-    <div class="structure">
+    <h1><%= title %></h1>
 
-        <h1><%= title %></h1>
+    <section class="info">
+        <dl>
+            <dt>Objective - </dt>
+            <dd><%= objective %></dd>
+            <dt>Completed - </dt>
+            <dd><%= completed %></dd>
+            <dt>Live Project - </dt>
+            <dd><a href="<%= link %>"><%= display_link %></a></dd>
+        </dl>
+    </section>
 
-        <section class="info">
-            <dl>
-                <dt>Objective - </dt>
-                <dd><%= objective %></dd>
-                <dt>Completed - </dt>
-                <dd><%= completed %></dd>
-                <dt>Live Project - </dt>
-                <dd><a href="<%= link %>"><%= display_link %></a></dd>
-            </dl>
-        </section>
-
-        <section class="description">
-            <%- yield %>
-        </section>
-
-    </div>
+    <section class="description">
+        <%- yield %>
+    </section>
 
 </div>

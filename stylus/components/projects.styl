@@ -1,13 +1,12 @@
-.projects.structure
-        padding: 0
-        @media ({$break-phone})
-            flexbox()
-            padding: 0 40px
+.projects
+    padding: 0
+    @media ({$break-phone})
+        flexbox()
 
     .project
         display: block
         @media ({$break-phone})
-            flex(1, 0, 49%)
+            flex(1, 1, 49%)
             overflow: hidden
             position: relative
         &:nth-of-type(1n)
@@ -29,7 +28,7 @@
 
         .upper
             overflow: hidden
-            padding: 40px 40px 0 40px
+            padding: $padding $padding 0 $padding
             @media ({$break-phone})
                 position: relative
 

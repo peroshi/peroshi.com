@@ -1,25 +1,11 @@
 <div class="blurb">
-    <div class="structure">
-        <div class="blurb-image">image</div>
-        <div class="blurb-text">
-            <p>Hey there, we're Peroshi &ndash; a team of developers hell-bent on making the best websites.</p>
-            <p>Why not <a href="/contact">get in touch</a> to discuss your project?</p>
-        </div>
+    <div class="blurb-image">image</div>
+    <div class="blurb-text">
+        <p>Hey there, we're Peroshi &ndash; a team of developers hell-bent on making the best websites.</p>
+        <p>Why not <a href="/contact">get in touch</a> to discuss your project?</p>
     </div>
 </div>
 
-<div class="projects structure">
-    <% for (var slug in public.work._data) { %>
-        <% var project = public.work._data[slug] %>
-        <a href="/work/<%= slug %>" class="project">
-            <div class="panel upper">
-                <img src="/images/<%= slug %>.png">
-            </div>
-            <div class="panel lower">
-                <p><%= project.title %></p>
-            </div>
-        </a>
-    <% } %>
-</div>
+<%- partial("_partials/_projects") %>
 
-<a href="/work" class="projects-link structure">View more projects</a>
+<a href="/work" class="projects-link">View more projects</a>

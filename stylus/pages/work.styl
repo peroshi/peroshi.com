@@ -1,12 +1,12 @@
 .page-work #site-content
 
     .text
+        padding: 0 $padding-narrow
         background: $off-white
-
-    .structure
         @media ({$break-phone})
             flexbox()
             flex-wrap(wrap)
+            padding: 20px $padding
 
     h1
         @media ({$break-phone})
@@ -22,7 +22,7 @@
     .info
         @media ({$break-mid})
             flex(1, 1, 32%)
-            padding-right: 20px
+            padding-right: 5%
             box-sizing: border-box
         @media ({$break-wide})
             flex(0, 0, 25%)

@@ -1,15 +1,16 @@
 #site-header
-    .structure
-        @media ({$break-phone})
-            flexbox()
+    @media ({$break-phone})
+        flexbox()
 
 #site-logo
     margin: 20px auto
     display: block
     width: 61%
     @media ({$break-phone})
+        box-sizing: border-box
         flex(1, 1, 49%)
-        margin: 40px 0
+        margin: 0
+        padding: $padding
 
     svg
         display: block
@@ -31,4 +32,4 @@
         text-align: center
         @media ({$break-phone})
             &:not(:first-child)
-                margin-left: 40px
+                margin-left: $padding

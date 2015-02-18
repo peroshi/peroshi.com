@@ -2,21 +2,19 @@
 
     .blurb
         background-color: $off-white
-        padding: 45px 0
-
-        .structure
-            @media ({$break-phone})
-                flexbox()
+        padding: $padding
+        @media ({$break-phone})
+            flexbox()
 
         .blurb-image
             display: none
             @media ({$break-phone})
                 display: block
-                flex(1, 1, 49%)
+                flex(1, 1, 50%)
 
         .blurb-text
             @media ({$break-phone})
-                flex(1, 1, 49%)
+                flex(1, 1, 50%)
 
             p
                 font-size: 30px
