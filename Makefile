@@ -17,4 +17,4 @@ deploy:
 	@echo "Compiling site..."
 	@harp compile -o $(BUILD_DIR)
 	@./bin/fixdirs.sh $(BUILD_DIR)
-	# s3cmd --config=s3cfg sync --delete-removed --acl-public $(BUILD_DIR) s3://peroshi.com/
+	s3cmd --config=s3cfg sync --delete-removed --acl-public $(BUILD_DIR) s3://peroshi.com/
