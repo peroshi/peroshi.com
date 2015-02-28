@@ -1,10 +1,6 @@
 {
-  "name": "harp",
-  "version": "0.0.0",
-  "authors": [
-    "Roger Hutchings <roger@hutchin.gs>"
-  ],
-  "license": "MIT",
+  "name": "peroshi.com",
+  "version": "1.0.0",
   "private": true,
   "ignore": [
     "**/.*",
@@ -15,7 +11,6 @@
   ],
   "dependencies": {
     "normalize.styl": "~3.0.2",
-    "stylus-flex-mixin": "git@github.com:differui/stylus-flex-mixin.git",
     "nib": "git@github.com:tj/nib.git#~1.1.0"
   }
 }

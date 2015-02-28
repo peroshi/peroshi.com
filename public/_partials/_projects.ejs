@@ -1,12 +1,12 @@
-<div class="projects">
+<div class="project-list">
     <% for (var slug in public.work._data) { %>
         <% var project = public.work._data[slug] %>
-        <a href="/work/<%= slug %>" class="project">
-            <div class="panel upper">
-                <img src="/images/<%= slug %>.jpg">
+        <a href="/work/<%= slug %>" class="project-item">
+            <div class="panel -image">
+                <img class="image" src="/images/<%= slug %>.jpg">
             </div>
-            <div class="panel lower">
-                <p><%= project.title %></p>
+            <div class="panel -overlay">
+                <p class="text"><%= project.title %></p>
             </div>
         </a>
     <% } %>

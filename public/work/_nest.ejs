@@ -1,17 +1,15 @@
-<div class="text">
+<div class="project-description">
 
-    <h1><%= title %></h1>
+    <h1 class="title"><%= title %></h1>
 
-    <section class="info">
-        <dl>
-            <dt>Objective - </dt>
-            <dd><%= objective %></dd>
-            <dt>Completed - </dt>
-            <dd><%= completed %></dd>
-            <dt>Live Project - </dt>
-            <dd><a href="<%= link %>"><%= display_link %></a></dd>
-        </dl>
-    </section>
+    <dl class="info">
+        <dt>Objective - </dt>
+        <dd><%= objective %></dd>
+        <dt>Completed - </dt>
+        <dd><%= completed %></dd>
+        <dt>Live Project - </dt>
+        <dd><a href="<%= link %>"><%= display_link %></a></dd>
+    </dl>
 
     <section class="description">
         <%- yield %>

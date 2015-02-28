@@ -1,0 +1,33 @@
+.project-description
+    padding: 0 $padding-narrow
+    background: $off-white
+    @media ({$break-phone})
+        display: flex
+        flex-wrap: wrap
+        padding: 20px $padding
+
+    > .title
+        @extend $font-montserrat
+        @media ({$break-phone})
+            flex: 0 0 100%
+
+    > .description
+        @media ({$break-mid})
+            flex: 1 1 68%
+        @media ({$break-wide})
+            flex: 0 0 50%
+
+    > .info
+        @media ({$break-mid})
+            flex: 1 1 32%
+            padding-right: 5%
+            box-sizing: border-box
+        @media ({$break-wide})
+            flex: 0 0 25%
+
+    > .info > dt
+            @extend $font-montserrat
+            font-weight: bold
+
+    > .info > dd
+            margin: 0 0 1em 0

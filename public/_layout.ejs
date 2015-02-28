@@ -9,17 +9,17 @@
         <link rel="stylesheet" href="/style.css">
     </head>
 
-    <body class="<% current.path.forEach(function (className) { %>page-<%= className %> <% }) %>">
+    <body class="page-wrapper">
 
-        <header id="site-header" role="banner">
-            <a href="/" id="site-logo"><%- partial("_svg/wordmark") %></a>
-            <nav id="site-nav" role="navigation">
-                <a href="/work">Work</a>
-                <a href="/contact">Contact</a>
+        <header class="site-header" role="banner">
+            <a href="/" class="logo"><%- partial("_svg/wordmark") %></a>
+            <nav class="nav-links" role="navigation">
+                <a class="link" href="/work">Work</a>
+                <a class="link" href="/contact">Contact</a>
             </nav>
         </header>
 
-        <main id="site-content">
+        <main class="site-content">
             <% if(current.path[0] === "work" && current.source !== 'index') { %>
                 <%- partial(current.path[0] + "/_nest") %>
             <% } else { %>
@@ -27,12 +27,12 @@
             <% } %>
         </main>
 
-        <footer id="site-footer" role="contentinfo">
+        <footer class="site-footer" role="contentinfo">
             <div class="logo"><%- partial("_svg/logo") %></div>
-            <div class="text">
-                <a href="mailto:hello@peroshi.com">hello@peroshi.com</a>
-                <span>&copy; 2015 Peroshi</span>
-                <span>All rights reserved</span>
+            <div class="footer-text">
+                <a class="item -link" href="mailto:hello@peroshi.com">hello@peroshi.com</a>
+                <span class="item">&copy; 2015 Peroshi</span>
+                <span class="item">All rights reserved</span>
             </div>
         </footer>
 
