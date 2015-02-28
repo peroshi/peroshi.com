@@ -2,7 +2,7 @@
   "name": "peroshi.com",
   "version": "1.0.0",
   "dependencies": {
-    "harp": "0.15.2"
+    "harp": "0.15.2",
     "nib": "1.1.0"
   }
 }
