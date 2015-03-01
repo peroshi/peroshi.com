@@ -1,4 +1,5 @@
 BUILD_DIR = ./build
+HARP_FILE = node_modules/.bin/harp
 
 help:
 	@echo "Usage"
@@ -7,14 +8,15 @@ help:
 	@echo "  make deploy       - build the site and deploy it to S3"
 
 install:
+	chmod +x ./bin/deploy.sh
 	npm install
 	bower install
 
 run:
-	node_modules/.bin/harp server
+	$(HARP_FILE) server
 
 deploy:
 	@echo "Compiling site..."
-	@harp compile -o $(BUILD_DIR)
-	@./bin/fixdirs.sh $(BUILD_DIR)
-	s3cmd --config=s3cfg sync --delete-removed --acl-public $(BUILD_DIR) s3://peroshi.com/
+	$(HARP_FILE) compile -o $(BUILD_DIR)
+	./bin/fixdirs.sh $(BUILD_DIR)
+	./bin/deploy.sh
