@@ -1,7 +1,6 @@
 {
   "name": "peroshi.com",
-  "version": "0.0.0",
-  "homepage": "https://github.com/peroshi/peroshi.com",
+  "version": "1.0.0",
   "private": true,
   "ignore": [
     "**/.*",
@@ -11,6 +10,7 @@
     "tests"
   ],
   "dependencies": {
-    "normalize.css": "3.0.2"
+    "normalize.styl": "~3.0.2",
+    "nib": "git@github.com:tj/nib.git#~1.1.0"
   }
 }

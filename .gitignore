@@ -1,7 +1,4 @@
-.sass-cache/
-.tmp/
-cache/
-dist/
-node_modules/
-output/
-theme/static/lib/
+www
+build
+bower_components
+node_modules

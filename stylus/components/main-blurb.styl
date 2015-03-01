@@ -1,0 +1,21 @@
+.main-blurb
+    background-color: $off-white
+    padding: $padding
+    @media ({$break-phone})
+        display: flex
+
+    > .image
+        display: none
+        @media ({$break-phone})
+            display: block
+            flex: 1 1 50%
+
+    > .text
+        @media ({$break-phone})
+            flex: 1 1 50%
+
+    > .text > .line
+        font-size: 30px
+        margin: 0 0 45px 0
+        &:last-of-type
+            margin: 0

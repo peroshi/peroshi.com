@@ -1,44 +1,20 @@
-CURRENT_BRANCH = $(shell git rev-parse --abbrev-ref HEAD)
+BUILD_DIR = ./build
 
 help:
 	@echo "Usage"
-	@echo "  make requirements - installs the python requirements"
-	@echo "  make ruby         - installs the ruby requirements"
-	@echo "  make npm          - installs the npm requirements"
-	@echo "  make bower        - installs the bower requirements"
-	@echo "  make install      - installs all requirements"
-	@echo "  make s3cmd        - syncs the built site directory with s3"
-	@echo "  make build        - builds the pelican site"
-	@echo "  make deploy       - builds the pelican site and syncs it to s3"
+	@echo "  make install      - install all NPM and Bower packages"
+	@echo "  make run	       - run the site locally for development"
+	@echo "  make deploy       - build the site and deploy it to S3"
 
-requirements:
-	pip install -r requirements.txt
-
-ruby:
-	rbenv install --skip-existing
-	gem install bundler
-	bundle install
-
-npm:
+install:
 	npm install
-
-bower:
 	bower install
 
-install: requirements ruby npm bower
-
-s3cmd:
-	s3cmd --config=s3cfg sync --delete-removed --acl-public dist/ s3://peroshi.com/
-
-build:
-	grunt build
+run:
+	node_modules/.bin/harp server
 
 deploy:
-ifneq ($(CURRENT_BRANCH), master)
-	@echo 'You should only be deploying on the master branch, jimmy.'
-	@exit 1
-endif
-
-	make install
-	make build
-	make s3cmd
+	@echo "Compiling site..."
+	@harp compile -o $(BUILD_DIR)
+	@./bin/fixdirs.sh $(BUILD_DIR)
+	s3cmd --config=s3cfg sync --delete-removed --acl-public $(BUILD_DIR) s3://peroshi.com/
