@@ -1,7 +1,8 @@
 .contact-content
     padding: 0 $padding-narrow
     @media ({$break-phone})
-        padding: 0 $padding
+        @extend $container
+        padding: 0 $padding $padding
 
     > .title,
     > .text
