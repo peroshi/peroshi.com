@@ -11,7 +11,8 @@ Built using Harp.
 
 - Install dependencies: `make run`
 - Run locally for development: `make run`
+- Deploy to S3: `make deploy`
 
 ## Conventions
 
-- RSCSS
+- [RSCSS](https://github.com/rstacruz/rscss)
