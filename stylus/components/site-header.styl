@@ -1,22 +1,13 @@
 .site-header
-    @media ({$break-phone})
-        @extend $container
-        display: flex
-        padding: $padding
-        box-sizing: border-box
+    padding: 30px 0
 
     > .logo
-        margin: 20px auto
+        margin: 0 auto
         display: block
-        width: 61%
-        @media ({$break-phone})
-            box-sizing: border-box
-            flex: 1 1 49%
-            margin: 0
+        max-width: 200px
 
     > .logo > svg
         display: block
         fill: #545454
-        @media ({$break-phone})
-            height: 30px
+        height: 30px
 
