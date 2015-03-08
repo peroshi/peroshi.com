@@ -5,12 +5,6 @@
         overflow: hidden
         position: relative
 
-    for color, i in #FB4E54 #2FC386 #E7E7E7 #9C48FF
-        &:nth-of-type({i + 1}n)
-            background-color: color
-            &:hover
-                background-color: lighten(color, 20%)
-
     > .panel.-image
         overflow: hidden
         padding: $padding $padding 0
