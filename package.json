@@ -1,6 +1,7 @@
 {
   "name": "peroshi.com",
   "version": "1.0.0",
+  "repository": "https://github.com/peroshi/peroshi.com",
   "dependencies": {
     "harp": "0.15.2",
     "nib": "1.1.0"
