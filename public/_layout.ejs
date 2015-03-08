@@ -12,7 +12,9 @@
     <body class="page-wrapper">
 
         <header class="site-header" role="banner">
-            <a href="/" class="logo"><%- partial("_svg/wordmark") %></a>
+            <div class="structure">
+                <a href="/" class="logo"><%- partial("_svg/wordmark") %></a>
+            </div>
         </header>
 
         <main class="site-content">
@@ -24,11 +26,13 @@
         </main>
 
         <footer class="site-footer" role="contentinfo">
-            <div class="logo"><%- partial("_svg/logo") %></div>
-            <div class="footer-text">
-                <a class="item -link" href="mailto:hello@peroshi.com">hello@peroshi.com</a>
-                <span class="item">&copy; 2015 Peroshi</span>
-                <span class="item">All rights reserved</span>
+            <div class="structure">
+                <div class="logo"><%- partial("_svg/logo") %></div>
+                <div class="footer-text">
+                    <a class="item -link" href="mailto:hello@peroshi.com">hello@peroshi.com</a>
+                    <span class="item">&copy; 2015 Peroshi</span>
+                    <span class="item">All rights reserved</span>
+                </div>
             </div>
         </footer>
 

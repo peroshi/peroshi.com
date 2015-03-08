@@ -1,14 +1,16 @@
 .main-blurb
-    background-color: $off-white
-    padding: $padding
 
-    > .text
-        @media ({$break-phone})
-            width: 50%
-            margin: 0 auto
+    > .structure
+        padding: (1.5 * $padding) $padding
 
-    > .text > .line
-        font-size: 30px
-        margin: 0 0 45px 0
-        &:last-of-type
-            margin: 0
+        > .text
+            @media ({$break-phone})
+                width: 70%
+                margin: 0 auto
+                text-align: center
+
+        > .text > .line
+            font-size: 30px
+            margin: 0 0 45px 0
+            &:last-of-type
+                margin: 0

@@ -1,5 +1,7 @@
 .project-list
-    padding: 0
-    @media ({$break-phone})
-        @extend $container
-        display: flex
+    background: #fff
+    padding: $padding
+    overflow: hidden
+    > .structure
+        // To counteract the bottom margin for the projects
+        margin-bottom: - $padding
