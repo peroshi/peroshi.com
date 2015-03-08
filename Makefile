@@ -1,5 +1,5 @@
 BUILD_DIR = ./build
-HARP_FILE = node_modules/.bin/harp
+HARP_FILE = ./node_modules/.bin/harp
 
 help:
 	@echo "Usage"
