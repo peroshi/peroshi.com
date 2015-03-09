@@ -17,12 +17,8 @@
             </div>
         </header>
 
-        <main class="site-content">
-            <% if(current.path[0] === "work" && current.source !== 'index') { %>
-                <%- partial(current.path[0] + "/_nest") %>
-            <% } else { %>
-                <%- yield %>
-            <% } %>
+        <main class="site-content" role="main">
+            <%- yield %>
         </main>
 
         <footer class="site-footer" role="contentinfo">
