@@ -7,4 +7,25 @@
     </div>
 </div>
 
-<%- partial("_partials/_projects") %>
+<div class="project-list">
+    <div class="structure">
+        <% for (var slug in public._data.work) { %>
+            <% var project = public._data.work[slug] %>
+            <div class="project-item">
+                <div class="panel-wrapper">
+                    <div class="panel -image">
+                        <img class="image" src="/images/<%= slug %>.jpg" width="1181" height="868">
+                    </div>
+
+                    <div class="panel -title-background"></div>
+
+                    <div class="panel -title">
+                        <span class="text"><%= project.title %></span>
+                    </div>
+
+                    <div class="panel -overlay"></div>
+                </div>
+            </div>
+        <% } %>
+    </div>
+</div>
