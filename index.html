@@ -6,7 +6,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Peroshi - Web development in Oxford</title>
-        <link rel="stylesheet" href="/style.css?1425860311298">
+        <link rel="stylesheet" href="/style.css?1426004008924">
     </head>
 
     <body class="page-wrapper">
@@ -20,9 +20,8 @@
             </div>
         </header>
 
-        <main class="site-content">
-            
-                <div class="main-blurb">
+        <main class="site-content" role="main">
+            <div class="main-blurb">
     <div class="structure">
         <div class="text">
             <p class="line">Hey there, we're Peroshi &mdash; a team of developers hell-bent on making the best websites.</p>
@@ -35,61 +34,85 @@
     <div class="structure">
         
             
-            <a href="/work/atalantas" class="project-item">
+            <div class="project-item" tabindex="0" itemscope itemtype="http://schema.org/WebSite" itemref="md-peroshi">
                 <div class="panel-wrapper">
                     <div class="panel -image">
-                        <img class="image" src="/images/atalantas.jpg" width="1181" height="868">
+                        <img class="image" alt="Website screenshot for Atalanta&#39;s Society" src="/images/atalantas.jpg" width="1181" height="868" itemprop="thumbnailUrl">
                     </div>
 
                     <div class="panel -title-background"></div>
 
                     <div class="panel -title">
-                        <span class="text">Atalanta&#39;s Society</span>
+                        <span class="text" itemprop="name">Atalanta&#39;s Society</span>
                     </div>
 
                     <div class="panel -overlay"></div>
+
+                    <meta itemprop="url" content="http://www.atalantas.org">
+
                 </div>
-            </a>
+            </div>
         
             
-            <a href="/work/work-in-the-alps" class="project-item">
+            <div class="project-item" tabindex="0" itemscope itemtype="http://schema.org/WebSite" itemref="md-peroshi">
                 <div class="panel-wrapper">
                     <div class="panel -image">
-                        <img class="image" src="/images/work-in-the-alps.jpg" width="1181" height="868">
+                        <img class="image" alt="Website screenshot for Work in the Alps" src="/images/work-in-the-alps.jpg" width="1181" height="868" itemprop="thumbnailUrl">
                     </div>
 
                     <div class="panel -title-background"></div>
 
                     <div class="panel -title">
-                        <span class="text">Work in the Alps</span>
+                        <span class="text" itemprop="name">Work in the Alps</span>
                     </div>
 
                     <div class="panel -overlay"></div>
+
+                    <meta itemprop="url" content="http://www.workinthealps.co.uk">
+
                 </div>
-            </a>
+            </div>
         
     </div>
 </div>
-            
         </main>
 
         <footer class="site-footer" role="contentinfo">
-            <div class="structure">
-                <div class="logo"><svg viewBox="0 0 19 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+            <div class="structure" itemprop="author" itemscope itemtype="http://schema.org/Organisation" id="md-peroshi">
+
+                <div class="logo" itemprop="logo"><svg viewBox="0 0 19 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <path d="M15.3006135,2.31288344 C14.5889571,1.42331288 13.5214724,0.889570552 12.4539877,0.355828221 C12.0981595,0.17791411 11.9202454,0.17791411 11.5644172,0 L7.11656442,4.44785276 L8.71779141,4.44785276 C9.25153374,4.44785276 9.96319018,4.62576687 10.4969325,4.80368098 C10.8527607,4.98159509 11.3865031,5.33742331 11.7423313,5.69325153 C12.0981595,6.22699387 12.4539877,6.7607362 12.6319018,7.29447853 C12.809816,7.82822086 12.9877301,8.36196319 12.9877301,9.07361963 C12.9877301,9.78527607 12.809816,10.3190184 12.6319018,10.8527607 C12.4539877,11.3865031 12.0981595,11.7423313 11.7423313,12.2760736 C11.3865031,12.6319018 10.8527607,12.9877301 10.3190184,13.1656442 C9.78527607,13.3435583 9.25153374,13.5214724 8.5398773,13.5214724 L4.80368098,13.5214724 L0,18.3251534 L0,29 L0.17791411,29 L4.80368098,24.3742331 L4.80368098,18.3251534 L8.71779141,18.3251534 C9.96319018,18.3251534 11.208589,18.1472393 12.4539877,17.6134969 C13.5214724,17.0797546 14.5889571,16.3680982 15.4785276,15.6564417 C16.3680982,14.7668712 17.0797546,13.8773006 17.4355828,12.6319018 C17.9693252,11.3865031 18.1472393,10.3190184 18.1472393,8.89570552 C18.1472393,7.65030675 17.9693252,6.40490798 17.4355828,5.33742331 C16.9018405,4.26993865 16.190184,3.20245399 15.3006135,2.31288344 L15.3006135,2.31288344 L15.3006135,2.31288344 Z"></path>
 </svg>
 
 </div>
                 <div class="footer-text">
-                    <a class="item -link" href="mailto:hello@peroshi.com">hello@peroshi.com</a>
-                    <span class="item">&copy; 2015 Peroshi</span>
+                    <a class="item -link" href="mailto:hello@peroshi.com"><span itemprop="email">hello@peroshi.com</span></a>
+                    <span class="item">&copy; 2015 <span itemprop="name">Peroshi Limited</span></span>
                     <span class="item">All rights reserved</span>
                 </div>
+
+                <div class="footer-text">
+                    <span class="item">Company Number: <span itemprop="taxID">09352969</span></span>
+                </div>
+
+                <div class="footer-text" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <span class="item">Registered Address:
+                        <span itemprop="streetAddress">11 Minns Road</span>,
+                        <span itemprop="addressLocality">Grove, Wantage</span>,
+                        <span itemprop="addressRegion">Oxfordshire</span>,
+                        <span itemprop="postalCode">OX12 7NA</span>
+                        <meta itemprop="addressCountry" content="GB" />
+                    </span>
+                </div>
+
+                <meta itemprop="url" content="http://www.peroshi.com" />
+
             </div>
         </footer>
 
         
-            <script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create','UA-27606403-2',{'siteSpeedSampleRate': 100});ga('send','pageview');</script>
+            <script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create','UA-60574792-1',{'siteSpeedSampleRate': 100});ga('send','pageview');</script>
         
 
     </body>
