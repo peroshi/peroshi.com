@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title><% if (typeof title !== 'undefined') { %><%= title %> - <% } %><%= siteTitle %></title>
+        <title><%= siteTitle %></title>
         <link rel="stylesheet" href="/style.css?<%= new Date().getTime() %>">
     </head>
 
@@ -21,12 +21,12 @@
             <%- yield %>
         </main>
 
-        <footer class="site-footer" role="contentinfo">
+        <footer class="site-footer" role="contentinfo" itemscope itemtype="http://schema.org/Corporation">
             <div class="structure">
                 <div class="logo"><%- partial("_svg/logo") %></div>
                 <div class="footer-text">
-                    <a class="item -link" href="mailto:hello@peroshi.com">hello@peroshi.com</a>
-                    <span class="item">&copy; 2015 Peroshi</span>
+                    <a class="item -link" href="mailto:hello@peroshi.com" itemtype="email contactPoint">hello@peroshi.com</a>
+                    <span class="item">&copy; 2015 <span itemtype="name">Peroshi</span></span>
                     <span class="item">All rights reserved</span>
                 </div>
             </div>
