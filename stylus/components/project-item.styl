@@ -1,46 +1,91 @@
+@keyframes project-left
+    0%
+        transform: translate3d(-200%, 0, 0)
+    100%
+        transform: translate3d(0, 0, 0)
+
+@keyframes project-right
+    0%
+        transform: translate3d(200%, 0, 0)
+    100%
+        transform: translate3d(0, 0, 0)
+
+$project-item-footer-height = 70px
+
 .project-item
     display: block
     @media ({$break-phone})
-        flex: 1 1 49%
-        overflow: hidden
+        float: left
+        width: 46%
+        margin: 0 0 $padding 0
         position: relative
+        &:nth-child(odd)
+            animation: project-left 900ms ease-in-out
+            margin-right: 4%
+        &:nth-child(even)
+            animation: project-right 900ms ease-in-out
+            margin-left: 4%
 
-    for color, i in #FB4E54 #2FC386 #E7E7E7 #9C48FF
-        &:nth-of-type({i + 1}n)
-            background-color: color
-            &:hover
-                background-color: lighten(color, 20%)
-
-    > .panel.-image
+    > .panel-wrapper
+        box-shadow: 0px 0px 10px rgba(#333, 0.6)
+        position: relative
         overflow: hidden
-        padding: $padding $padding 0
-        @media ({$break-phone})
-            position: relative
 
-    > .panel.-image > .image
-            box-shadow: 0px 0px 10px rgba(#333, 0.6)
+        > .panel.-image
+            @media ({$break-phone})
+                position: relative
+
+        > .panel.-image > .image
             display: block
             height: auto
             width: 100%
 
-    > .panel.-overlay
-        display: none
-        @media ({$break-phone})
-            align-items: center
-            background: rgba(#333, 0.92)
-            display: flex
-            height: 100%
-            justify-content: center
-            position: absolute
-            transition: transform 0.4s
+        > .panel.-title-background
+            height: $project-item-footer-height
+            text-align: center
+            background: $off-white
+            border-bottom: 4px solid $purple
+
+
+        > .panel.-title
+            margin: 0
+            font-size: 1.7em
+            text-align: center
+            color: $main-grey
             width: 100%
+            height: 100%
+            position: absolute
+            z-index: 10
+            display: flex
+            transform: translate3d(0, - $project-item-footer-height, 0)
+            transition: transform 400ms ease-in-out
+            > .text
+                height: $project-item-footer-height
+                line-height: $project-item-footer-height
+                width: 100%
+                transition: color 400ms ease-in-out
 
-    &:hover > .panel.-overlay
-        transform: translateY(-100%)
 
-    > .panel.-overlay > .text
-        color: white
-        font-size: 2em
-        margin: 20px
-        text-align: center
+        > .panel.-overlay
+            display: none
+            @media ({$break-phone})
+                background: rgba(#333, 0.95)
+                height: 100%
+                display: flex
+                position: absolute
+                transition: transform 400ms ease-in-out
+                transition-delay: 100ms
+                width: 100%
 
+    &:hover
+        text-decoration: none
+
+        > .panel-wrapper
+            > .panel.-overlay
+                transform: translate3d(0, -100%, 0)
+                transition-delay: 0
+            > .panel.-title
+                transform: translate3d(0, -90%, 0)
+                transition-delay: 100ms
+                > .text
+                    color: #fff

@@ -1,10 +1,34 @@
 <div class="main-blurb">
-    <div class="text">
-        <p class="line">Hey there, we're Peroshi &mdash; a team of developers hell-bent on making the best websites.</p>
-        <p class="line">Why not <a href="/contact">get in touch</a> to discuss your project?</p>
+    <div class="structure">
+        <div class="text">
+            <p class="line">Hey there, we're Peroshi &mdash; a team of developers hell-bent on making the best websites.</p>
+            <p class="line">Why not <!-- Email link is temporary... --><a href="mailto:hello@peroshi.com">get in touch</a> to discuss your project?</p>
+        </div>
     </div>
 </div>
 
-<%- partial("_partials/_projects") %>
+<div class="project-list">
+    <div class="structure">
+        <% for (var slug in public._data.work) { %>
+            <% var project = public._data.work[slug] %>
+            <div class="project-item" tabindex="0" itemscope itemtype="http://schema.org/WebSite" itemref="md-peroshi">
+                <div class="panel-wrapper">
+                    <div class="panel -image">
+                        <img class="image" alt="Website screenshot for <%= project.title %>" src="/images/<%= slug %>.jpg" width="1181" height="868" itemprop="thumbnailUrl">
+                    </div>
 
-<a href="/work" class="more-link">View more projects</a>
+                    <div class="panel -title-background"></div>
+
+                    <div class="panel -title">
+                        <span class="text" itemprop="name"><%= project.title %></span>
+                    </div>
+
+                    <div class="panel -overlay"></div>
+
+                    <meta itemprop="url" content="<%= project.link %>" />
+
+                </div>
+            </div>
+        <% } %>
+    </div>
+</div>
