@@ -13,10 +13,9 @@ install:
 	bower install
 
 run:
-	$(HARP_FILE) server
+	@$(HARP_FILE) server
 
 deploy:
 	@echo "Compiling site..."
 	$(HARP_FILE) compile -o $(BUILD_DIR)
-	./bin/fixdirs.sh $(BUILD_DIR)
 	./bin/deploy.sh
