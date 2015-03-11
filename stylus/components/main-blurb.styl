@@ -3,14 +3,14 @@
     > .structure
         padding: (1.5 * $padding) $padding
 
-        > .text
-            @media ({$break-phone})
-                width: 70%
-                margin: 0 auto
-                text-align: center
+    > .structure > .text
+        @media ({$break-phone})
+            width: 70%
+            margin: 0 auto
+            text-align: center
 
-        > .text > .line
-            font-size: 30px
-            margin: 0 0 45px 0
-            &:last-of-type
-                margin: 0
+    > .structure > .text > .line
+        font-size: 30px
+        margin: 0 0 45px 0
+        &:last-of-type
+            margin: 0
