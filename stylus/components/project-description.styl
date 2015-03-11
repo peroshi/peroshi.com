@@ -5,30 +5,30 @@
         @media ({$break-phone})
             padding: 20px $padding
 
-        > .title
-            @extend $font-montserrat
-            font-weight: normal
-            @media ({$break-phone})
-                width: 100%
+    > .structure > .title
+        @extend $font-montserrat
+        font-weight: normal
+        @media ({$break-phone})
+            width: 100%
 
-        > .description
-            float: left
-            @media ({$break-mid})
-                width: 68%
-            @media ({$break-wide})
-                width: 50%
+    > .structure > .description
+        float: left
+        @media ({$break-mid})
+            width: 68%
+        @media ({$break-wide})
+            width: 50%
 
-        > .info
-            float: left
-            @media ({$break-mid})
-                width: 32%
-                padding-right: 5%
-            @media ({$break-wide})
-                width: 25%
+    > .structure > .info
+        float: left
+        @media ({$break-mid})
+            padding-right: 5%
+            width: 32%
+        @media ({$break-wide})
+            width: 25%
 
-        > .info > dt
-                @extend $font-montserrat
-                font-weight: bold
+    > .structure > .info > dt
+        @extend $font-montserrat
+        font-weight: bold
 
-        > .info > dd
-                margin: 0 0 1em 0
+    > .structure > .info > dd
+        margin: 0 0 1em 0
