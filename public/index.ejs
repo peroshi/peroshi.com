@@ -12,7 +12,7 @@
         <% for (var slug in public._data.work) { %>
             <% var project = public._data.work[slug] %>
             <div class="project-item" tabindex="0" itemscope itemtype="http://schema.org/WebSite" itemref="md-peroshi">
-                <div class="panel-wrapper">
+                <a href="<%= project.link %>" itemprop="url" class="panel-wrapper">
                     <div class="panel -image">
                         <img class="image" alt="Website screenshot for <%= project.title %>" src="/images/<%= slug %>.jpg" width="1181" height="868" itemprop="thumbnailUrl">
                     </div>
@@ -24,10 +24,7 @@
                     </div>
 
                     <div class="panel -overlay"></div>
-
-                    <meta itemprop="url" content="<%= project.link %>" />
-
-                </div>
+                </a>
             </div>
         <% } %>
     </div>
