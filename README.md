@@ -9,7 +9,7 @@ Built using Harp.
 
 ## Commands
 
-- Install dependencies: `make run`
+- Install dependencies: `make install`
 - Run locally for development: `make run`
 - Deploy to S3: `make deploy`
 
