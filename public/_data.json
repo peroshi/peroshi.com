@@ -1,11 +1,11 @@
 {
     "work": {
-        "atalantas": {
-            "title": "Atalanta's Society",
-            "objective": "Redesign and rebuild their website, adding event and membership management",
-            "completed": "January 2015",
-            "link": "http://www.atalantas.org",
-            "display_link": "atalantas.org"
+        "will-elsom": {
+            "title": "Will Elsom",
+            "objective": "Portfolio of Oxford based freelance photographer Will Elsom.",
+            "completed": "May 2015",
+            "link": "http://www.willelsom.com",
+            "display_link": "willelsom.com"
         },
         "work-in-the-alps": {
             "title": "Work in the Alps",
@@ -13,6 +13,13 @@
             "completed": "February 2015",
             "link": "http://www.workinthealps.co.uk",
             "display_link": "workinthealps.co.uk"
+        },
+        "atalantas": {
+            "title": "Atalanta's Society",
+            "objective": "Redesign and rebuild their website, adding event and membership management",
+            "completed": "January 2015",
+            "link": "http://www.atalantas.org",
+            "display_link": "atalantas.org"
         }
     }
 }
