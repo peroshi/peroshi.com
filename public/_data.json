@@ -1,5 +1,12 @@
 {
     "work": {
+        "willelsom": {
+            "title": "Will Elsom",
+            "objective": "Portfolio of Oxford based freelance photographer Will Elsom.",
+            "completed": "May 2015",
+            "link": "http://www.willelsom.com",
+            "display_link": "willelsom.com"
+        },
         "work-in-the-alps": {
             "title": "Work in the Alps",
             "objective": "Design and build a website for a skiing jobs startup",
