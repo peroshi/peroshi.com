@@ -51,41 +51,26 @@ $project-item-footer-height = 70px
         color: $main-grey
         display: flex
         font-size: 1.7em
-        height: 100%
         margin: 0
         position: absolute
         text-align: center
         transform: translate3d(0, - $project-item-footer-height, 0)
-        transition: transform 400ms ease-in-out
         width: 100%
         z-index: 10
         > .text
             height: $project-item-footer-height
             line-height: $project-item-footer-height
-            transition: color 400ms ease-in-out
             width: 100%
 
-
-    > .panel-wrapper > .panel.-overlay
-        display: none
-        @media ({$break-phone})
-            background: rgba(#333, 0.95)
-            display: flex
-            height: 100%
-            position: absolute
-            transition: transform 400ms ease-in-out
-            transition-delay: 100ms
-            width: 100%
 
     &:hover
         text-decoration: none
-
-    &:hover > .panel-wrapper > .panel.-overlay
-        transform: translate3d(0, -100%, 0)
-        transition-delay: 0
+        box-shadow: 0px 0px 10px rgba($purple, 0.6)
 
     &:hover > .panel-wrapper > .panel.-title
-        transform: translate3d(0, -90%, 0)
-        transition-delay: 100ms
         > .text
             color: #fff
+
+    &:hover > .panel-wrapper > .panel.-title-background
+        background-color: #333
+        border: none
