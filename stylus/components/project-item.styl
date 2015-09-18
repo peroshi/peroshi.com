@@ -13,10 +13,14 @@
 $project-item-footer-height = 70px
 
 .project-item
+    box-shadow: 0px 0px 10px rgba(#333, 0.6)
     display: block
+    margin: 0 0 $padding 0
+    overflow: hidden
+    position: relative
+
     @media ({$break-phone})
         float: left
-        margin: 0 0 $padding 0
         position: relative
         width: 46%
         &:nth-child(odd)
@@ -26,66 +30,26 @@ $project-item-footer-height = 70px
             animation: project-right 900ms ease-in-out
             margin-left: 4%
 
-    > .panel-wrapper
-        box-shadow: 0px 0px 10px rgba(#333, 0.6)
-        overflow: hidden
-        position: relative
-        display: block
-
-    > .panel-wrapper > .panel.-image
-        @media ({$break-phone})
-            position: relative
-
-    > .panel-wrapper > .panel.-image > .image
+    > .image
         display: block
         height: auto
         width: 100%
 
-    > .panel-wrapper > .panel.-title-background
+    > .text
         background: $off-white
         border-bottom: 4px solid $purple
-        height: $project-item-footer-height
-        text-align: center
-
-    > .panel-wrapper > .panel.-title
         color: $main-grey
-        display: flex
+        display: block
         font-size: 1.7em
-        height: 100%
-        margin: 0
-        position: absolute
+        height: $project-item-footer-height
+        line-height: $project-item-footer-height
         text-align: center
-        transform: translate3d(0, - $project-item-footer-height, 0)
-        transition: transform 400ms ease-in-out
-        width: 100%
-        z-index: 10
-        > .text
-            height: $project-item-footer-height
-            line-height: $project-item-footer-height
-            transition: color 400ms ease-in-out
-            width: 100%
-
-
-    > .panel-wrapper > .panel.-overlay
-        display: none
-        @media ({$break-phone})
-            background: rgba(#333, 0.95)
-            display: flex
-            height: 100%
-            position: absolute
-            transition: transform 400ms ease-in-out
-            transition-delay: 100ms
-            width: 100%
 
     &:hover
+        box-shadow: 0px 0px 10px rgba($purple, 0.6)
         text-decoration: none
 
-    &:hover > .panel-wrapper > .panel.-overlay
-        transform: translate3d(0, -100%, 0)
-        transition-delay: 0
-
-    &:hover > .panel-wrapper > .panel.-title
-        transform: translate3d(0, -90%, 0)
-        transition-delay: 100ms
-        > .text
-            color: #fff
+    &:hover > .text
+        background-color: #333
+        border: none
+        color: #fff
