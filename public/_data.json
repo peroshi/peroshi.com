@@ -30,6 +30,11 @@
             "title": "OxBikeBox",
             "link": "https://oxbikebox.com",
             "display_link": "oxbikebox.com"
+        },
+        "nomadwallet": {
+            "title": "Nomad Wallet",
+            "link": "https://www.nomadwallet.io",
+            "display_link": "nomadwallet.io"
         }
     }
 }
