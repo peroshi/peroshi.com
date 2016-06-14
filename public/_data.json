@@ -35,6 +35,11 @@
             "title": "Nomad Wallet",
             "link": "https://www.nomadwallet.io",
             "display_link": "nomadwallet.io"
+        },
+        "washdrop": {
+            "title": "WashDrop",
+            "link": "https://www.washdrop.co",
+            "display_link": "washdrop.co"
         }
     }
 }
