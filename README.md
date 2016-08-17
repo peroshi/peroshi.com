@@ -5,13 +5,12 @@ Built using Harp.
 ## Requirements
 
 - Node / NPM
-- s3cmd
 
 ## Commands
 
 - Install dependencies: `make install`
 - Run locally for development: `make run`
-- Deploy to S3: `make deploy`
+- Deploy to GitHub Pages: `make deploy`
 
 ## Conventions
 
