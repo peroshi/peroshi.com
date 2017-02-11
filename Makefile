@@ -1,6 +1,3 @@
-BUILD_DIR = ./build
-HARP_FILE = ./node_modules/.bin/harp
-
 help:
 	@echo "Usage"
 	@echo "  make install      - install all NPM packages"
@@ -8,13 +5,12 @@ help:
 	@echo "  make deploy       - build the site and deploy it to GitHub Pages"
 
 install:
-	chmod +x ./bin/deploy.sh
 	npm install
 
 run:
-	@$(HARP_FILE) server
+	npm run start
 
 deploy:
 	@echo "Compiling site..."
-	$(HARP_FILE) compile -o $(BUILD_DIR)
+	npm run build
 	./bin/deploy.sh

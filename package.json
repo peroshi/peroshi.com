@@ -13,6 +13,7 @@
     "stylus"
   ],
   "scripts": {
-    "start": "harp server"
+    "start": "harp server",
+    "build": "harp compile -o ./build"
   }
 }
