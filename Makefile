@@ -5,7 +5,6 @@ help:
 	@echo "  make deploy       - build the site and deploy it to GitHub Pages"
 
 install:
-	chmod +x ./bin/deploy.sh
 	npm install
 
 run:
